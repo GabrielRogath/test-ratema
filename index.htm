@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RATEMA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  padding: 10px; /*some padding */
+  text-align: center; /* center the text */
+  background: #1abc9c; /* green background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 25%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main { 
+  flex: 75%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+
+.container{
+
+   display: grid;
+    grid-gap: 20px;
+     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.box > img {
+  width: 75%;
+}
+
+.box {
+padding: 130px;
+margin: 20px;
+}
+
+
+/*.fakeimg2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 1/-1;
+
+}
+*/
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg2 {
+  background-color: #aaa;
+  
+  background-image:url('sdg.jpg');
+  
+    
+}
+
+/* Fake image, just for this example */
+.maguimg {
+  background-color: #aaa;
+ 
+  background-image:url('magu.jpg');
+ 
+    
+
+}
+
+/* Fake image, just for this example */
+.shambaniimg {
+  background-color: #aaa;
+  
+  background-image:url('shambani.jpg');
+  
+
+}
+
+/* Fake image, just for this example */
+.kiswahiliimg {
+  background-color: #aaa;
+  
+  background-image:url('kiswahili.jpg'); 
+ 
+}
+
+/* Fake image, just for this example */
+.zanzibarimg {
+  background-color: #aaa;
+  
+  background-image:url('zanzibar.png');
+  
+   
+}
+
+/* Footer */
+.footer2 {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+     width:100%;
+    
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>RATEMA</h1>
+<p>RAFIKI TEHAMA KWA MAENDELEO YA JAMII.</p>
+<p>(Friendly Techonologies For Community Development).</p>
+</div>
+
+<div class="navbar">
+ <a href="index.htm">Home</a>
+  <a href="project.htm">Projects</a>
+  <a href="aboutus.htm">About Us</a>
+  <a href="contact.htm" class="right">Contacts</a>
+</div>
+
+
+
+
+<div class="row">
+  
+  <div class="main">
+    <h2>RATEMA</h2>
+    <h5>RAFIKI TEHAMA KWA MAENDELEO YA JAMII</h5>
+    <h5>(Friendly Techonologies For Community Development)</h5>
+    
+    <p>RATEMA is a Non Governmental Organization registered under Tanzanian laws Act No.24 of 2002 with registration No 0906. RATEMA is an acronym of Kiswahili terms "Rakifi Tehama kwa Maendeleo ya Jamii" which means a Friendly Technologies for Community Development.</p>
+    <p>RATEMA has realizing that there's a gap of insufficiently utilizing or using of technologies to make our communities more sustainable places to live, work and socialize in. RATEMA is focusing on eliminate or reduce this gap by creating open and innovative projects that can enrich communities and provide social support to the socities. With these projects created will also increase the level of understanding and awareness in the aspects of Health and Wellbeing, Social Development, Environmental and Educational </p>
+    
+    
+    <h2>Projects</h2>
+        <div>
+         <h3> <a href="project.htm">SDGsPamoja App</a></h3>
+         <div class="zone container">
+         <div class="box zone fakeimg2" style="height:250px;"><a href="project.htm"></a></div>
+         <div class="box zone maguimg" style="height:250px;"><a href="project.htm"></a></div>
+         <div class="box zone shambaniimg" style="height:250px;"><a href="project.htm"></a></div>
+         <div class="box zone kiswahiliimg" style="height:250px;"><a href="project.htm"></a></div>
+         <div class="box zone zanzibarimg" style="height:250px;"><a href="project.htm"></a></div>
+         </div>
+       </div>
+
+         <div>
+         <h3> <a href="project.htm">Coming Soon(March 2020)</a></h3>
+         <div class="fakeimg" style="height:200px;"><a href="project.htm">Coming Soon</a>Image</div>
+         </div>
+  
+    </div>
+
+<div class="side">
+    <h2>Latest Publications</h2>
+    <h5>RATEMA Certification:</h5>
+    <div class="fakeimg" style="height:200px;"> SDGsPamoja </div>
+    <p>RATEMA receive a registration certicate from the Government</p>
+    
+    <h5>SDGsPamoja App Official Launched</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>SDGsPamoja App Official Launched</p>
+    
+    <h5>New Educational Project to be Launched</h5>
+    <p>Coming Soon (March 2020).....</p>
+    
+  </div>
+</div>
+
+<div class="footer2">
+<h2>Partners with</h2>
+</div>
+
+<br>
+
+<div class="footer">
+  <p>Copyright © 2019 RATEMA   |   ALL RIGHTS RESERVED </p>
+  
+</div>
+
+
+
+</body>
+</html>
